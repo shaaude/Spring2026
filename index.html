@@ -10,7 +10,7 @@
     :root {
       --bg:#0a0f1a; --bg2:#111827; --bg3:#1f2937;
       --border:rgba(255,255,255,0.08); --border2:rgba(255,255,255,0.18);
-      --text:#e2e8f0; --text2:#94a3b8; --text3:#475569;
+      --text:#e2e8f0; --text2:#94a3b8; --text3:#7a8fa6;
       --red:#dc2626; --green:#22c55e; --yellow:#eab308;
       --orange:#f97316; --blue:#3b82f6;
       --accent:#dc2626;
@@ -20,7 +20,7 @@
       :root{
         --bg:#f1f5f9; --bg2:#ffffff; --bg3:#f8fafc;
         --border:rgba(0,0,0,0.07); --border2:rgba(0,0,0,0.15);
-        --text:#0f172a; --text2:#475569; --text3:#94a3b8;
+        --text:#0f172a; --text2:#475569; --text3:#5c6f82;
       }
     }
     *{box-sizing:border-box;margin:0;padding:0}
@@ -31,12 +31,12 @@
 
     /* HEADER */
     .hdr{text-align:center;padding-bottom:16px;border-bottom:1px solid rgba(220,38,38,.2);margin-bottom:18px}
-    .hdr-eyebrow{font-size:10px;color:var(--text3);letter-spacing:4px;text-transform:uppercase;margin-bottom:8px;line-height:1.8}
+    .hdr-eyebrow{font-size:10px;color:var(--text2);letter-spacing:4px;text-transform:uppercase;margin-bottom:8px;line-height:1.8}
     .team-selector-wrap{display:inline-flex;align-items:center;justify-content:center;position:relative;cursor:pointer;margin-bottom:4px}
     .hdr-title{font-size:clamp(22px,6vw,32px);font-weight:700;letter-spacing:clamp(3px,1.5vw,7px);line-height:1;color:var(--accent);transition:color .2s}
     .team-dropdown-arrow{font-size:clamp(16px,4vw,22px);margin-left:10px;opacity:0.6;color:var(--accent);transition:color .2s}
     .team-select{position:absolute;top:0;left:0;width:100%;height:100%;opacity:0;cursor:pointer;font-size:16px;border:none;background:none;-webkit-appearance:none}
-    .hdr-sub{font-size:10px;color:var(--text3);letter-spacing:2px;margin-top:6px}
+    .hdr-sub{font-size:10px;color:var(--text2);letter-spacing:2px;margin-top:6px}
     .hdr-badges{display:flex;gap:10px;justify-content:center;margin-top:10px;flex-wrap:wrap}
     .hdr-badge{font-size:11px;padding:3px 10px;border-radius:var(--radius);border:0.5px solid}
 
@@ -50,12 +50,12 @@
     .metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:20px}
     @media(max-width:500px){.metrics{grid-template-columns:repeat(2,1fr)}}
     .metric{background:var(--bg2);border:0.5px solid var(--border);border-radius:var(--radius);padding:12px;text-align:center}
-    .metric-label{font-size:8px;color:var(--text3);letter-spacing:2px;text-transform:uppercase;margin-bottom:4px}
+    .metric-label{font-size:9px;color:var(--text2);letter-spacing:2px;text-transform:uppercase;margin-bottom:4px}
     .metric-val{font-size:26px;font-weight:700}
     .win-bar-wrap{height:3px;background:var(--border);margin-top:3px;border-radius:2px;overflow:hidden}
     .win-bar{height:100%;border-radius:2px}
     .badge{display:inline-block;padding:2px 7px;font-size:9px;border-radius:var(--radius);border:0.5px solid;letter-spacing:1px;text-transform:uppercase;white-space:nowrap}
-    .section-label{font-size:9px;color:var(--text3);letter-spacing:3px;text-transform:uppercase;margin-bottom:8px}
+    .section-label{font-size:9px;color:var(--text2);letter-spacing:3px;text-transform:uppercase;margin-bottom:8px}
     .game-detail{background:var(--bg3);border-top:0.5px solid var(--border);padding:14px;font-size:11px}
     .detail-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:12px}
     @media(max-width:500px){.detail-grid{grid-template-columns:1fr}}
@@ -63,7 +63,7 @@
     /* DESKTOP TABLE */
     .forecast-desktop{display:block}
     .forecast-mobile{display:none}
-    .col-hdr{display:grid;grid-template-columns:28px 64px 1fr 54px 54px 62px 42px 40px 68px;gap:5px;padding:4px 14px;font-size:8px;color:var(--text3);letter-spacing:2px;text-transform:uppercase;margin-bottom:4px}
+    .col-hdr{display:grid;grid-template-columns:28px 64px 1fr 54px 54px 62px 42px 40px 68px;gap:5px;padding:4px 14px;font-size:9px;color:var(--text2);letter-spacing:2px;text-transform:uppercase;margin-bottom:4px}
     .game-row-d{display:grid;grid-template-columns:28px 64px 1fr 54px 54px 62px 42px 40px 68px;gap:5px;padding:11px 14px;background:var(--bg2);border:0.5px solid var(--border);border-radius:var(--radius);margin-bottom:5px;cursor:pointer;font-size:11px;align-items:center;transition:border-color .15s}
     .game-row-d:hover{border-color:var(--border2)}
 
@@ -81,10 +81,10 @@
     .card-stats{display:grid;grid-template-columns:repeat(3,1fr);border-top:0.5px solid var(--border)}
     .stat-cell{padding:10px 8px;text-align:center;border-right:0.5px solid var(--border)}
     .stat-cell:last-child{border-right:none}
-    .stat-label{font-size:8px;color:var(--text3);letter-spacing:2px;text-transform:uppercase;margin-bottom:4px}
+    .stat-label{font-size:9px;color:var(--text2);letter-spacing:2px;text-transform:uppercase;margin-bottom:4px}
     .stat-val{font-size:16px;font-weight:700}
     .card-footer{display:flex;align-items:center;justify-content:space-between;padding:10px 14px;border-top:0.5px solid var(--border);background:var(--bg3)}
-    .card-score-label{font-size:9px;color:var(--text3);letter-spacing:1px;text-transform:uppercase}
+    .card-score-label{font-size:9px;color:var(--text2);letter-spacing:1px;text-transform:uppercase}
     .card-score{font-size:15px;font-weight:700}
     .card-pick{padding:4px 12px;font-size:11px;font-weight:700;border-radius:var(--radius);border:1.5px solid;letter-spacing:2px}
 
